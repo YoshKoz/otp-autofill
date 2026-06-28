@@ -1,0 +1,164 @@
+[2026-06-24 10:58:32.935] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 10:58:32.988] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 10:58:32.991] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 10:58:33.011] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 10:58:33.016] [INFO ] [HOOK  ] → PostToolUse: Bash(cd ~/code/projects/otp-autofill; time rm -rf './~'; ls -la)
+[2026-06-24 10:58:49.509] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 10:58:49.655] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 10:58:49.662] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 10:58:49.727] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 10:58:49.757] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}
+[2026-06-24 10:59:56.094] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 10:59:56.137] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 10:59:56.139] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 10:59:56.160] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 10:59:56.202] [INFO ] [HOOK  ] [session-29] INIT_COMPLETE | sessionDbId=29 | promptNumber=11 | project=otp-autofill
+[2026-06-24 11:00:10.723] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:00:10.767] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:00:10.770] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:00:10.792] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:00:10.798] [INFO ] [HOOK  ] → PostToolUse: Bash(P=~/.mozilla/firefox/1qpm6ts2.default-nightly
+echo "=== addons in extensions.json (id | active | name) ==="
+time python3 - "$P/extensions.json" <<'EOF' 2>&1
+import json,sys
+d=json.load(open(sys.argv[1]))
+for a in d.get("addons",[]):
+    name=(a.get("defaultLocale") or {}).get("name","?")
+    print(f"  {a.get('id'):35} active={a.get('active')} type={a.get('type')} | {name}")
+EOF
+echo "=== native-messaging hosts registered ==="
+ls -la ~/.mozilla/native-messaging-hosts/*.json
+echo "=== otp host manifest target ==="
+readlink -f ~/.mozilla/native-messaging-hosts/otp_autofill.json)
+[2026-06-24 11:01:00.183] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:01:00.228] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:01:00.230] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:01:00.248] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:01:00.255] [INFO ] [HOOK  ] → PostToolUse: Edit(/home/yoshkoz/code/projects/otp-autofill/native_host.py)
+[2026-06-24 11:01:27.048] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:01:27.092] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:01:27.094] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:01:27.112] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:01:27.119] [INFO ] [HOOK  ] → PostToolUse: mcp__claudecodebrowser__browser_navigate(https://example.com/)
+[2026-06-24 11:01:54.460] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:01:54.508] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:01:54.510] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:01:54.530] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:01:54.565] [INFO ] [HOOK  ] [session-29] INIT_COMPLETE | sessionDbId=29 | promptNumber=12 | project=otp-autofill
+[2026-06-24 11:02:53.036] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:02:53.212] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:02:53.223] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:02:53.315] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:02:53.340] [INFO ] [HOOK  ] → PostToolUse: Bash(P=~/.mozilla/firefox/1qpm6ts2.default-nightly
+echo "=== running profile? (lock) ==="; ls -la "$P/.parentlock" "$P"/lock 2>&1 | head
+echo "=== signedState / disabled for our two addons ==="
+time python3 - "$P/extensions.json" <<'EOF' 2>&1
+import json,sys
+d=json.load(open(sys.argv[1]))
+want={"claudecodebrowser@ligandal.com","otp-autofill@yoshkoz.local"}
+for a in d.get("addons",[]):
+    if a.get("id") in want:
+        print(f"  {a['id']}")
+        for k in ("active","userDisabled","appDisabled","signedState","signedTypes","location","version","sourceURI"):
+            print(f"      {k} = {a.get(k)}")
+EOF
+echo "=== all signature-related prefs ==="; grep -iE 'signatures|xpinstall' "$P/prefs.js" 2>&1
+echo "=== firefox nightly version ==="; cat /usr/lib/firefox-nightly/application.ini 2>/dev/null | grep -iE '^Version|^BuildID|^SourceRepository|^RemotingName' | head)
+[2026-06-24 11:04:05.273] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:04:05.323] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:04:05.325] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:04:05.347] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:04:05.354] [INFO ] [HOOK  ] → PostToolUse: Bash(echo "=== web-ext / signing tools ==="; time which web-ext 2>&1; npm ls -g web-ext 2>/dev/null | grep web-ext; echo "---"
+echo "=== MV2 support prefs (v154 may gate MV2) ==="; P=~/.mozilla/firefox/1qpm6ts2.default-nightly; grep -iE 'manifestV2|manifestV3|quarantin' "$P/prefs.js" 2>&1 || echo "(no MV2/quarantine prefs set → defaults)"
+echo "=== both addons manifest_version ==="; for x in ~/.claudecodebrowser/claudecodebrowser.xpi ~/code/projects/otp-autofill/otp-autofill.xpi; do echo "$x:"; unzip -p "$x" manifest.json 2>/dev/null | grep -i manifest_version; done)
+[2026-06-24 11:04:29.518] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:04:29.647] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:04:29.652] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:04:29.691] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:04:29.702] [INFO ] [HOOK  ] → PostToolUse: Write(/home/yoshkoz/.mozilla/firefox/1qpm6ts2.default-nightly/user.js)
+[2026-06-24 11:05:23.932] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:05:23.978] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:05:23.979] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:05:24.005] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:05:24.011] [INFO ] [HOOK  ] → PostToolUse: AskUserQuestion
+[2026-06-24 11:05:53.811] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:05:53.851] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:05:53.853] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:05:53.875] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:05:53.882] [INFO ] [HOOK  ] → PostToolUse: Bash(time npm install -g web-ext 2>&1 | tail -15)
+[2026-06-24 11:06:02.260] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:06:02.301] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:06:02.303] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:06:02.323] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:06:02.329] [INFO ] [HOOK  ] → PostToolUse: Bash(mkdir -p ~/.config
+f=~/.config/amo-api.env
+if [ ! -f "$f" ]; then
+cat > "$f" <<'EOF'
+# AMO API credentials for signing unsigned extensions (web-ext sign).
+# Generate at: https://addons.mozilla.org/en-US/developers/addon/api/key/
+# Paste the two values below (no quotes), then save. This file is chmod 600.
+WEB_EXT_API_KEY=user:PASTE_ISSUER_HERE
+WEB_EXT_API_SECRET=PASTE_SECRET_HERE
+EOF
+fi
+chmod 600 "$f"
+time ls -la "$f"; echo "--- template ---"; grep -v SECRET "$f" | grep -vE '^#' )
+[2026-06-24 11:06:18.371] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:06:18.416] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:06:18.418] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:06:18.442] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:06:18.452] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}
+[2026-06-24 11:06:19.024] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:06:19.075] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:06:19.077] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:06:19.096] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:06:25.705] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:06:25.755] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:06:25.756] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:06:25.776] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:06:25.782] [INFO ] [HOOK  ] → PostToolUse: Bash(time which web-ext && web-ext --version 2>&1 | head -1)
+[2026-06-24 11:06:29.810] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:06:29.855] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:06:29.857] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:06:29.877] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:06:29.886] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}
+[2026-06-24 11:09:23.185] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:09:23.227] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:09:23.229] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:09:23.251] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:09:23.292] [INFO ] [HOOK  ] [session-29] INIT_COMPLETE | sessionDbId=29 | promptNumber=13 | project=otp-autofill
+[2026-06-24 11:09:38.775] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:09:38.820] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:09:38.822] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:09:38.852] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:09:38.864] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}
+[2026-06-24 11:10:40.636] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:10:40.679] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:10:40.682] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:10:40.702] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:10:40.759] [INFO ] [HOOK  ] [session-29] INIT_COMPLETE | sessionDbId=29 | promptNumber=14 | project=otp-autofill
+[2026-06-24 11:11:23.954] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:11:23.997] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:11:23.999] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:11:24.019] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:11:24.028] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}
+[2026-06-24 11:12:48.618] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:12:48.662] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:12:48.664] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:12:48.684] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:12:48.742] [INFO ] [HOOK  ] [session-29] INIT_COMPLETE | sessionDbId=29 | promptNumber=15 | project=otp-autofill
+[2026-06-24 11:12:55.790] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:12:55.850] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:12:55.851] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:12:55.874] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:12:55.881] [INFO ] [HOOK  ] → PostToolUse: Bash(time rm -f ~/.config/amo-api.env && echo "removed creds template (had placeholders only, no secret)")
+[2026-06-24 11:13:10.833] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:13:10.914] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:13:10.917] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:13:10.943] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:13:10.952] [INFO ] [HOOK  ] → PostToolUse: Edit(/home/yoshkoz/.claude/projects/-home-yoshkoz/memory/project_otp_autofill.md)
+[2026-06-24 11:13:19.574] [INFO ] [SYSTEM] Cached SKILL.md at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/mem-search/SKILL.md, bytes=4081}
+[2026-06-24 11:13:19.620] [INFO ] [SYSTEM] Cached viewer.html at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/ui/viewer.html, bytes=76899}
+[2026-06-24 11:13:19.623] [INFO ] [SYSTEM] Cached onboarding explainer at boot {path=/home/yoshkoz/.claude/plugins/cache/thedotmack/claude-mem/13.8.0/skills/how-it-works/onboarding-explainer.md, bytes=1009}
+[2026-06-24 11:13:19.645] [INFO ] [SYSTEM] Worker already running and healthy
+[2026-06-24 11:13:19.655] [INFO ] [HOOK  ] → Stop: Requesting summary {hasLastAssistantMessage=true}

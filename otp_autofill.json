@@ -1,7 +1,7 @@
 {
   "name": "otp_autofill",
   "description": "OTP autofill native host (reads local Thunderbird mboxes)",
-  "path": "/home/yoshkoz/code/projects/otp-autofill/native_host.py",
+  "path": "/home/yoshkoz/code/mine/otp-autofill/native_host.py",
   "type": "stdio",
   "allowed_extensions": ["otp-autofill@yoshkoz.local"]
 }
